@@ -1,8 +1,8 @@
 package homework;
 
-public class F {
+public class Grade extends Main{
 
-	//F 부모클래스
+	// 부모클래스
 	
 	
 	
@@ -15,12 +15,12 @@ public class F {
    
    
    
-public F(int stdentNo, String studentName, int kor, int eng, int math, int[] score) {
+public Grade(int stdentNo, String studentName, int kor, int eng, int math, int[] score) {
 	super();
 	this.stdentNo = stdentNo;
 	this.studentName = studentName;
 	this.kor = kor;
-	this.eng = eng;
+	this.eng = eng;// this = 인스턴스 //클래스는 하나지만 수많은 인스턴스를 가지고있다.
 	this.math = math;
 	this.score = score;
 
@@ -28,7 +28,7 @@ public F(int stdentNo, String studentName, int kor, int eng, int math, int[] sco
 
 
 
-public F(int stdentNo, String studentName) {
+public Grade(int stdentNo, String studentName) {
 	super();
 	this.stdentNo = stdentNo;
 	this.studentName = studentName;
