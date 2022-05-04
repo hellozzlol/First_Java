@@ -28,7 +28,21 @@ public class HashSetExample {
 		}
 		
 		System.out.println();
-
+		
+		set.remove("JDBC");
+		set.remove("iBATIS");
+		
+		System.out.println("총 객체 수  : " + set.size());
+		
+		for(String str : set) {
+			System.out.println("\t" + str);
+		}
+		
+		set.clear();
+		if(set.isEmpty()) {
+			System.out.println("비어있음");
+		}
+		
 	}
 
 }

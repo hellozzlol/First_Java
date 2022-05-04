@@ -12,10 +12,13 @@ public class Twentyhills {
 	public static void main(String[] args) {
 		
 		
+		//
+		
+		
+		
 		Scanner scn = new Scanner(System.in);
 		List<String> list = new ArrayList<String>();
 		String[] ArrayList = {"Orange","Game","Phone","Smart"};
-		ArrayList<String> randomList = new ArrayList<String>();
 	
 		list.add("Orange");
 		list.add("Game");
@@ -31,7 +34,7 @@ public class Twentyhills {
 			System.out.println("1.문자하나 | 2.단어 | 3.입력내역| 4.새 게임 | 5.종료");
 			System.out.println("============================================");
 			
-			int random = (int)Math.random()*randomList.size();
+			int random = (int)Math.random()*4;
 			int menu= Integer.parseInt(scn.nextLine());
 			
 			
@@ -41,6 +44,12 @@ public class Twentyhills {
 					scn.nextLine();
 					System.out.println("===>입력값");
 					System.out.println("현재까지 확인된 문자열의 문자들은 다음과 같습니다.");
+					
+					
+					
+					
+					
+					
 					
 				}
 				System.out.println();	
