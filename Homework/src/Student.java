@@ -39,7 +39,7 @@ public class Student {
 	  
 	System.out.println("합계 : "+sum);
 	System.out.println("===============================================================");
-	System.out.println("평균 : "+average);
+	System.out.println("평균 : " +Math.round(average));
 	System.out.println("==============================================================="); 
 	
 	

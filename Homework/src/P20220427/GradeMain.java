@@ -21,6 +21,8 @@ public class GradeMain {
 
 		System.out.println("===================================================================================");
 	
+		
+		
 		sc.nextLine();
 		System.out.println("1.이름");
 		
@@ -61,13 +63,14 @@ public class GradeMain {
 		 System.out.println("7.평균 : " +avg);
 	
 		 
-	
+		 sc.nextLine();
+			System.out.println("8.종료" );
+			
 		
-		System.out.println("8.종료" );
-		sc.nextLine();
 
-		System.out.println("===================================================================================");
 	
+		 System.out.println("===================================================================================");
 	}
+	
 
 }
