@@ -7,6 +7,7 @@ import co.micol.prj20220504.dto.StudentVO;
 import co.micol.prj20220504.serive.StudentService;
 
 public class Menu {
+	//java 는 밑에있는걸 object라고함↓private 라고적힌 것
 	
 	//멤버 변수 선언
 	//생성자 선언
@@ -20,10 +21,11 @@ public class Menu {
 	
 	
 	private void mainTitle() {
-		System.out.println("======================================");
-	    System.out.println("====1. 학 사 관 리======================");
-	    System.out.println("====2. 공 지 관 리======================");
-	    System.out.println("====3. 종      료======================");
+		System.out.println("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
+	    System.out.println("1.         학 사 관 리                  ");
+	    System.out.println("2.         공 지 관 리                  ");
+	    System.out.println("3.         종      료                  ");
+	    System.out.println("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
 	}
 	
 	private void lmsTitle() {
@@ -34,7 +36,7 @@ public class Menu {
 	    System.out.println("====3. 학 생 등 록======================");
 	    System.out.println("====4. 학 생 수 정======================");
 	    System.out.println("====5. 학 생 삭 제======================");
-	    System.out.println("====6. 학 생 등 록======================");
+	    System.out.println("====6. 돌 아 가 기======================");
 	    System.out.println("======================================");
 		
 		
@@ -123,7 +125,7 @@ boolean b =false;//초기 값을 관례로 false라고함.
 
 	private void lmsMenu() {
 		
-boolean b =false;//초기 값을 관례로 false라고함.
+    boolean b =false;//초기 값을 관례로 false라고함.
 		
 		do {
 			lmsTitle();
@@ -148,9 +150,9 @@ boolean b =false;//초기 값을 관례로 false라고함.
 				String name = sc.nextLine();
 				System.out.println("학생전공을 입력하세요.");
 				String major = sc.nextLine();
-				System.out.println("학생전화번호를 입력하세요.");
-				String address = sc.nextLine();
 				System.out.println("학생주소를 입력하세요.");
+				String address = sc.nextLine();
+				System.out.println("학생연락처를 입력하세요.");
 				String tel = sc.nextLine();
 				System.out.println("학생생년월일를 입력하세요.");
 				String birthday = sc.nextLine();
