@@ -5,6 +5,7 @@ import java.sql.Date;
 public class TrainerVO {
 	
 	private String id;//트레이너 사번
+	private String join;//트레이너 입사년도
 	private String name;//트레이너원이름
 	private String gender;//트레이너원성별
 	private String address;//트레이너주소
@@ -15,10 +16,11 @@ public class TrainerVO {
 		
 	}
 	
-	public TrainerVO(String id,String name,String gender,String address,String tel,Date birthday) {
+	public TrainerVO(String id,String join,String name,String gender,String address,String tel,Date birthday) {
 	super();
 	
 	this.id = id;
+	this.join=join;
 	this.name =name;
 	this.gender = gender;
 	this.address = address;
@@ -42,6 +44,16 @@ public class TrainerVO {
 
 	public void setId(String id) {
 		this.id = id;
+	}
+	
+	
+
+	public String getJoin() {
+		return join;
+	}
+
+	public void setJoin(String join) {
+		this.join = join;
 	}
 
 	public String getName() {
@@ -86,13 +98,15 @@ public class TrainerVO {
 
 	@Override
 	public String toString() {
+		System.out.println("===============================");
 		System.out.println("사 번 : "+id );
+		System.out.println("입사년도 :" +join);
 		System.out.println("직원이름 : "+name );
 		System.out.println("직원성별 : "+gender );
 		System.out.println("직원주소 : "+address );
 		System.out.println("직원전화번호 : "+tel );
 		System.out.println("직원생년월일 : "+birthday );
-		
+		System.out.println("===============================");
 		
 		return address;
 	}
