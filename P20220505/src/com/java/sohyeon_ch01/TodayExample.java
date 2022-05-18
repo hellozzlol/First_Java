@@ -17,10 +17,7 @@ public class TodayExample {
 			while(true) {
 			try {
 				Scanner sc = new Scanner(System.in);
-				
-				System.out.println("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
-				System.out.println("    점수를 입력하세요.>>>>>>>>> ");
-				System.out.println("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■");
+			
 				score = sc.nextInt(); 
 				if(score>=90) {
 					grade = 'A';
