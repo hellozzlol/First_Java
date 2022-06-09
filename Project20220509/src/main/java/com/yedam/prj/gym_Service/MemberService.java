@@ -1,5 +1,7 @@
 package com.yedam.prj.gym_Service;
 
+
+
 import java.util.List;
 import java.util.Scanner;
 
@@ -37,7 +39,7 @@ public class MemberService {
 	
 	
 	public void insertMember(MemberVO vo) {//회원등록하는부분
-		members.add(vo);
+	    members.add(vo);
 		for(MemberVO m : members) {
 			m.toString();
 		}
@@ -57,7 +59,7 @@ public class MemberService {
 		//변경할 전화번호를 입력한다
 		//그다음엔 변경되었습니다 라는 문구가 나온다.
 		//위에 처럼 하고 싶은데 아직 내 머리가...정리..가..안되네ㅐ요ㅠ
-		  //성공 완. 
+		  //성공 완(2022-05-11). 
 		Scanner lsc = new Scanner(System.in);
 		//회원정보 수정하는 부분↓
 		for(MemberVO vo : members) {
@@ -66,7 +68,10 @@ public class MemberService {
 				System.out.println("변경할 전화번호 입력");
 				vo.setTel(lsc.nextLine());
 				vo.toString();
-				break;
+				System.out.println("변경할 체중 입력");
+				vo.setWeight(lsc.nextLine());
+		     	vo.toString();
+				
 	 	  }
 		 }	
 		}	
@@ -81,6 +86,13 @@ public class MemberService {
 		}
 
 	}
+	
+	
+	
+	
+	
+	
+	
 
 }
 
