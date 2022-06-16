@@ -5,9 +5,6 @@ public class GameExample {
 	public static void main(String[] args) {
 		
 		
-		
-		
-		
 		//game.leftbo
 		
 		//전부다 game.leftUpButton
